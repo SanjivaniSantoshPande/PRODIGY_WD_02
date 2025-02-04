@@ -1,0 +1,73 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Fixed Navbar Styling */
+  header {
+    position: fixed; /* Makes the navbar stick to the top */
+    width: 100%; /* Full-width navbar */
+    top: 0;
+    z-index: 1000; /* Ensures it's above other content */
+  }
+  
+  .navbar {
+    background-color: #333; /* Dark background */
+    padding: 10px 0; /* Padding for spacing */
+    display: flex;
+    justify-content: center; /* Centers the links */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+  }
+  
+  .nav-links {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Displays links in a row */
+    gap: 20px; /* Space between links */
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* White text color */
+    font-size: 1.2rem; /* Slightly larger font size */
+    padding: 10px 15px; /* Adds padding around links */
+    transition: color 0.3s, background-color 0.3s; /* Smooth hover effect */
+  }
+  
+  .nav-links a:hover {
+    background-color: white; /* Background changes to white on hover */
+    color: #333; /* Text color changes to dark */
+    border-radius: 5px; /* Adds rounded corners to links */
+  }
+  
+  /* Navbar color when scrolled */
+  .navbar.scrolled {
+    background-color: #555; /* Lighter background when scrolled */
+  }
+  
+  /* Styling sections */
+  section {
+    padding: 100px 20px; /* Spacing inside each section */
+    height: 100vh; /* Each section takes up the full height of the viewport */
+  }
+  
+  #home {
+    background-color: #f4f4f4; /* Light gray */
+  }
+  
+  #about {
+    background-color: #ddd; /* Darker gray */
+  }
+  
+  #services {
+    background-color: #bbb; /* Even darker gray */
+  }
+  
+  #contact {
+    background-color: #999; /* Darkest gray */
+  }
