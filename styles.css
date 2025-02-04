@@ -1,4 +1,4 @@
-/* Reset default styling */
+/* Reset defaults */
 * {
     margin: 0;
     padding: 0;
@@ -6,68 +6,82 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Fixed Navbar Styling */
-  header {
-    position: fixed; /* Makes the navbar stick to the top */
-    width: 100%; /* Full-width navbar */
-    top: 0;
-    z-index: 1000; /* Ensures it's above other content */
-  }
-  
-  .navbar {
-    background-color: #333; /* Dark background */
-    padding: 10px 0; /* Padding for spacing */
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     display: flex;
-    justify-content: center; /* Centers the links */
-    transition: background-color 0.3s ease; /* Smooth background color change */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
   }
   
-  .nav-links {
-    list-style: none; /* Removes bullet points */
-    display: flex; /* Displays links in a row */
-    gap: 20px; /* Space between links */
+  .stopwatch {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
   }
   
-  .nav-links a {
-    text-decoration: none; /* Removes underline from links */
-    color: white; /* White text color */
-    font-size: 1.2rem; /* Slightly larger font size */
-    padding: 10px 15px; /* Adds padding around links */
-    transition: color 0.3s, background-color 0.3s; /* Smooth hover effect */
+  h1 {
+    color: #e94e77;
+    margin-bottom: 20px;
+    font-size: 2rem;
   }
   
-  .nav-links a:hover {
-    background-color: white; /* Background changes to white on hover */
-    color: #333; /* Text color changes to dark */
-    border-radius: 5px; /* Adds rounded corners to links */
+  #display {
+    font-size: 3.5rem;
+    margin: 20px 0;
+    color: #2f4858;
+    font-weight: bold;
   }
   
-  /* Navbar color when scrolled */
-  .navbar.scrolled {
-    background-color: #555; /* Lighter background when scrolled */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
   }
   
-  /* Styling sections */
-  section {
-    padding: 100px 20px; /* Spacing inside each section */
-    height: 100vh; /* Each section takes up the full height of the viewport */
+  button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #5f2c82;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
   }
   
-  #home {
-    background-color: #f4f4f4; /* Light gray */
+  button:hover {
+    background: #49a09d;
+    transform: scale(1.05);
   }
   
-  #about {
-    background-color: #ddd; /* Darker gray */
+  button:active {
+    background: #f6d365;
   }
   
-  #services {
-    background-color: #bbb; /* Even darker gray */
+  #laps {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
   }
   
-  #contact {
-    background-color: #999; /* Darkest gray */
+  #laps li {
+    background: #f9ed69;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #444;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  #laps li:nth-child(odd) {
+    background: #ffd460;
   }
